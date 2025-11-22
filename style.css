@@ -1055,3 +1055,8 @@ footer span {
   color: var(--text-muted);
   margin-bottom: 0.8rem;
 }
+.project-image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
