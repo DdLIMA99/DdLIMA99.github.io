@@ -1022,3 +1022,36 @@ footer span {
   box-shadow: 0 8px 18px rgba(15, 23, 42, 0.9);
   background: radial-gradient(circle at top, #1f2937, #020617);
 }
+/* ==== REFERENCES ==== */
+
+#references {
+  margin-top: 3rem;
+}
+
+.references-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.reference-card {
+  background: rgba(30, 41, 59, 0.9);
+  padding: 1.2rem 1.4rem;
+  border-radius: 0.9rem;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+
+.ref-name {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  color: #f1f5f9;
+}
+
+.ref-role {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 0.8rem;
+}
