@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio - Kodzo LIMA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <div class="nav-left">
+        <div class="logo-circle">KL</div>
+        <div class="nav-title">
+          <span>Kodzo LIMA</span>
+          <span>Ingénieur Statisticien/Data Analyst</span>
+        </div>
+      </div>
+
+      <button class="nav-toggle" aria-label="Menu">
+        ☰
+      </button>
+
+      <div class="nav-links">
+        <a href="#hero">Accueil</a>
+        <a href="#about">Profil</a>
+        <a href="#projects">Projets</a>
+        <a href="#experience">Expériences</a>
+        <a href="#journey">Parcours</a>
+        <a href="#contact">Me contacter <span>✉</span> </a>
+          
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page">
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div>
+        <div class="hero-kicker">ePortfolio</div>
+        <h1 class="hero-title">
+          Bonjour, je suis <span>Kodzo LIMA</span>
+        </h1>
+        <p class="hero-subtitle">
+          Data Analyst en alternance à SNCF Groupe et étudiant en MBA Big Data &amp; Intelligence Artificielle à ESG MBA Paris.
+          Issu d’un parcours en statistiques et données du vivant à l’Université de Poitiers, je travaille sur la donnée de bout en bout :
+          préparation, analyse, modélisation et restitution pour la décision.
+        </p>
+
+        <div class="hero-badges">
+          <div class="badge">Data Analyst – SNCF Groupe</div>
+          <div class="badge">MBA Big Data &amp; IA</div>
+          <div class="badge">Statistiques &amp; données du vivant</div>
+        </div>
+
+        <div class="hero-actions">
+          <button class="btn-main" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">
+            Voir mes projets
+          </button>
+          <button class="btn-ghost" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">
+            En savoir plus
+          </button>
+        </div>
+
+        <div class="hero-meta">
+          <div>
+            <strong>+3 ans</strong>
+            d’expériences projet (stage, alternance, autonomie)
+          </div>
+          <div>
+            <strong>France</strong>
+            Basé en Île-de-France, mobile selon les besoins
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-card">
+          <div class="hero-photo">
+            <div class="photo-frame">
+              <div class="photo-inner">
+                <!-- Assure-toi que le fichier Kodzo.png est bien dans le même dossier -->
+                <img src="Kodzo.png" alt="Photo de Kodzo LIMA" class="profile-photo">
+              </div>
+            </div>
+            <h2>Kodzo LIMA</h2>
+            <span>Data Analyst en alternance – SNCF Groupe</span>
+          </div>
+
+          <div class="hero-tags">
+            <span class="hero-tag-pill">Python &amp; R</span>
+            <span class="hero-tag-pill">SQL</span>
+            <span class="hero-tag-pill">Statistiques spatiales</span>
+            <span class="hero-tag-pill">Power BI &amp; Excel</span>
+            <span class="hero-tag-pill">Big Data &amp; IA</span>
+          </div>
+
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <strong>2+</strong>
+              ans en alternance
+            </div>
+            <div class="hero-stat">
+              <strong>3</strong>
+              stages &amp; projets majeurs
+            </div>
+            <div class="hero-stat">
+              <strong>2</strong>
+              domaines clés : data &amp; statistiques
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <div class="about-card">
+  <p>
+    Je suis étudiant en deuxième année de MBA Big Data &amp; Intelligence Artificielle à ESG MBA Paris
+    et Data Analyst en alternance à SNCF Groupe. À moyen terme, je vise des postes de
+    Chief Data Officer ou Data Strategist.
+  </p>
+
+  <p>
+    J’ai construit mon profil sur une base solide de mathématiques, de statistiques et d’analyse de données
+    à l’Université de Poitiers (Licence, Master 1 et Master 2 Statistique et Données du Vivant).
+  </p>
+
+  <p>
+    Lors de mes expériences, j’ai travaillé sur des données sanitaires spatiales (Mayotte),
+    des bases ferroviaires complexes et des projets web avec SQL / PHP.
+    Je mets l’accent sur la qualité des données, la rigueur des modèles et la clarté des résultats.
+  </p>
+
+  <ul class="about-list">
+    <li>Analyse spatiale et spatio-temporelle</li>
+    <li>Modélisation statistique &amp; indicateurs de risque</li>
+    <li>Préparation et structuration de bases complexes</li>
+    <li>Automatisation &amp; reporting (Excel, Power BI)</li>
+    <li>Développement web (HTML, PHP, SQL)</li>
+  </ul>
+
+  <h3 class="about-subtitle">Ce que tu peux attendre de moi</h3>
+  <ul class="about-list">
+    <li>Capacité à partir de données brutes et livrer un résultat exploitable pour le métier.</li>
+    <li>Habitude de documenter le code, les modèles et les choix méthodologiques.</li>
+    <li>Réactivité pour tester plusieurs approches (statistiques, ML, visualisation) et garder la plus robuste.</li>
+  </ul>
+
+  <h3 class="about-subtitle">Ce que je recherche aujourd’hui</h3>
+  <ul class="about-list">
+    <li>Des projets où la donnée sert vraiment à décider (prévision, optimisation, scoring, dashboards).</li>
+    <li>Un environnement où je peux combiner Python, R, SQL et outils BI sur des cas concrets.</li>
+    <li>Des équipes où échange technique, relecture de code et feedback font partie du quotidien.</li>
+  </ul>
+
+  <h3 class="about-subtitle">Centres d’intérêt data</h3>
+  <ul class="about-list">
+    <li>Modèles de prévision (séries temporelles, risque, scoring).</li>
+    <li>Qualité et fiabilisation des données avant modélisation.</li>
+    <li>Data visualisation claire pour des profils non techniques.</li>
+  </ul>
+</div>
+
+
+        <!-- COLONNE DROITE : COMPÉTENCES -->
+        <div class="skills-card">
+          <h3 style="font-size: 1rem; margin-bottom: 0.8rem;">COMPÉTENCES</h3>
+
+          <div class="skills-2col">
+            <!-- TECHNIQUES -->
+            <div class="skills-box">
+              <h3>Techniques</h3>
+              <ul>
+                <li><strong>Analyse &amp; Statistiques :</strong> modèles prédictifs, régression, classification, évaluation, analyse spatiale.</li>
+                <li><strong>Python &amp; R :</strong> pandas, numpy, scikit-learn, statsmodels, tidyverse, ggplot2.</li>
+                <li><strong>SQL &amp; Databases :</strong> requêtes avancées, jointures, optimisation, ETL.</li>
+                <li><strong>Data viz :</strong> Power BI, R Shiny, matplotlib, seaborn.</li>
+                <li><strong>Machine Learning :</strong> arbres, forêts, boosting, clustering, séries temporelles.</li>
+                <li><strong>Outils :</strong> Git, LaTeX, Excel avancé.</li>
+              </ul>
+            </div>
+
+            <!-- MBA + TRANSVERSALES -->
+            <div class="skills-box">
+              <h3>Avec MBA Big Data &amp; IA</h3>
+              <ul>
+                <li>NLP &amp; Deep Learning (bases)</li>
+                <li>Architecture Big Data, Data Lake</li>
+                <li>Data Pipeline, ETL/ELT, automatisation</li>
+                <li>Qualité de données &amp; gouvernance</li>
+              </ul>
+
+              <h3>Transversales</h3>
+              <ul>
+                <li>Communication claire</li>
+                <li>Analyse &amp; rigueur scientifique</li>
+                <li>Autonomie</li>
+                <li>Travail en équipe</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+ <!-- PROJETS -->
+<section id="projects">
+  <h2 class="section-heading">
+    <span></span>
+    Projets sélectionnés
+  </h2>
+  <p class="section-subtitle">
+    Une sélection de projets professionnels et académiques autour de la data, des statistiques et du machine learning.
+  </p>
+
+  <div class="projects-grid">
+
+    <!-- PROJET PRO 1 : SNCF Réseau -->
+    <article class="project-card">
+      <div class="project-image" style="background-image: url('https://images.pexels.com/photos/1351509/pexels-photo-1351509.jpeg?auto=compress&cs=tinysrgb&w=800');">
+        <div class="project-overlay"></div>
+      </div>
+      <div class="project-body">
+        <div>
+          <div class="project-title">Qualité et analyse de données ferroviaires</div>
+          <div class="project-type">Alternance – SNCF Réseau</div>
+          <p class="project-desc">
+            Nettoyage et structuration de bases ferroviaires, mise en place de modèles statistiques et tableaux de bord
+            pour la visualisation, l’interprétation et la prévision de données métiers.
+          </p>
+        </div>
+        <div class="project-tags">
+          <span class="project-tag">SQL</span>
+          <span class="project-tag">Python</span>
+          <span class="project-tag">Power BI</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- PROJET PRO 2 : Mayotte -->
+    <article class="project-card">
+      <div class="project-image" style="background-image: url('https://images.pexels.com/photos/590041/pexels-photo-590041.jpeg?auto=compress&cs=tinysrgb&w=800');">
+        <div class="project-overlay"></div>
+      </div>
+      <div class="project-body">
+        <div>
+          <div class="project-title">Analyse de risques sanitaires à Mayotte</div>
+          <div class="project-type">Stage – Données spatiales</div>
+          <p class="project-desc">
+            Analyse spatiale et spatio-temporelle de données sanitaires, construction d’indicateurs de risque
+            et mise en place d’un score adapté aux schémas d’observation propres à Mayotte.
+          </p>
+        </div>
+        <div class="project-tags">
+          <span class="project-tag">R</span>
+          <span class="project-tag">Python</span>
+          <span class="project-tag">Données spatiales</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- PROJET PRO 3 : Site web SQL / PHP -->
+    <article class="project-card">
+      <div class="project-image" style="background-image: url('https://images.pexels.com/photos/1181670/pexels-photo-1181670.jpeg?auto=compress&cs=tinysrgb&w=800');">
+        <div class="project-overlay"></div>
+      </div>
+      <div class="project-body">
+        <div>
+          <div class="project-title">Site web dynamique avec SQL et PHP</div>
+          <div class="project-type">Projet universitaire</div>
+          <p class="project-desc">
+            Conception d’une page HTML et d’un mini-site dynamique connecté à une base SQL pour saisir, stocker
+            et afficher des données de manière simple et structurée.
+          </p>
+        </div>
+        <div class="project-tags">
+          <span class="project-tag">HTML / CSS</span>
+          <span class="project-tag">PHP</span>
+          <span class="project-tag">SQL</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- PROJET ACAD 1 : Machine Learning -->
+    <article class="project-card">
+      <div class="project-image" style="background-image: url('https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=800');">
+        <div class="project-overlay"></div>
+      </div>
+      <div class="project-body">
+        <div>
+          <div class="project-title">Machine Learning : perceptron & full-connected</div>
+          <div class="project-type">Projet académique – Python</div>
+          <p class="project-desc">
+            Développement de perceptrons simples et multicouches, apprentissage Widrow-Hoff et réseaux full-connected
+            pour la discrimination d’images. Comparaison de stratégies d’apprentissage et de performances.
+          </p>
+        </div>
+        <div class="project-tags">
+          <span class="project-tag">Python</span>
+          <span class="project-tag">Deep Learning</span>
+          <span class="project-tag">Classification</span>
+        </div>
+        <a href="https://drive.google.com/uc?export=view&id=1cYzWT1_geTZGMGMMKTu1pll0i029QwhO"
+           class="project-btn" target="_blank">
+          📄 Voir le rapport (PDF)
+        </a>
+      </div>
+    </article>
+
+    <!-- PROJET ACAD 2 : Statistique non paramétrique -->
+    <article class="project-card">
+      <div class="project-image" style="background-image: url('https://images.pexels.com/photos/669610/pexels-photo-669610.jpeg?auto=compress&cs=tinysrgb&w=800');">
+        <div class="project-overlay"></div>
+      </div>
+      <div class="project-body">
+        <div>
+          <div class="project-title">Statistique non paramétrique</div>
+          <div class="project-type">Projet académique</div>
+          <p class="project-desc">
+            Estimation de densité par noyaux (Parzen–Rosenblatt), estimateur de Nadaraya–Watson, choix du paramètre
+            de lissage par validation croisée et comparaison des méthodes sur données simulées et réelles.
+          </p>
+        </div>
+        <div class="project-tags">
+          <span class="project-tag">R / Python</span>
+          <span class="project-tag">Non paramétrique</span>
+          <span class="project-tag">Validation croisée</span>
+        </div>
+        <a href="https://drive.google.com/uc?export=view&id=1I0uK823l8CnX2KYs1gpiRIxdptHlnE6n"
+           class="project-btn" target="_blank">
+          📄 Voir le rapport (PDF)
+        </a>
+      </div>
+    </article>
+
+    <!-- PROJET ACAD 3 : Algorithmes stochastiques -->
+    <article class="project-card">
+      <div class="project-image" style="background-image: url('https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=800');">
+        <div class="project-overlay"></div>
+      </div>
+      <div class="project-body">
+        <div>
+          <div class="project-title">Algorithmes stochastiques et simulations</div>
+          <div class="project-type">Projet académique</div>
+          <p class="project-desc">
+            Simulation de mélanges de lois normales, implémentation de l’algorithme EM, étude de convergence
+            de suites aléatoires et visualisation de trajectoires de processus stochastiques.
+          </p>
+        </div>
+        <div class="project-tags">
+          <span class="project-tag">R</span>
+          <span class="project-tag">Probabilités</span>
+          <span class="project-tag">Simulation</span>
+        </div>
+        <a href="https://drive.google.com/uc?export=view&id=1BO_As557qClxszYNtNBYAIqP7sroBiJR"
+           class="project-btn" target="_blank">
+          📄 Voir le rapport (PDF)
+        </a>
+      </div>
+    </article>
+
+    <!-- PROJET ACAD 4 : Analyse numérique -->
+    <article class="project-card">
+      <div class="project-image" style="background-image: url('https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg?auto=compress&cs=tinysrgb&w=800');">
+        <div class="project-overlay"></div>
+      </div>
+      <div class="project-body">
+        <div>
+          <div class="project-title">Analyse numérique : résolution de systèmes</div>
+          <div class="project-type">Projet académique – Python</div>
+          <p class="project-desc">
+            Implémentation en Python d’algorithmes d’analyse numérique pour résoudre des systèmes d’équations linéaires
+            via décomposition LU et QR, avec validation et comparaison des méthodes.
+          </p>
+        </div>
+        <div class="project-tags">
+          <span class="project-tag">Python</span>
+          <span class="project-tag">Analyse numérique</span>
+          <span class="project-tag">Algèbre linéaire</span>
+        </div>
+        <a href="https://drive.google.com/uc?export=view&id=1_byuM7JK23iXJ1Iu9QUJXK3DmW5qLEiQ"
+           class="project-btn" target="_blank">
+          📄 Voir le rapport (PDF)
+        </a>
+      </div>
+    </article>
+
+    <!-- PROJET ACAD 5 : Base de données SQL -->
+    <article class="project-card">
+      <div class="project-image" style="background-image: url('https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=800');">
+        <div class="project-overlay"></div>
+      </div>
+      <div class="project-body">
+        <div>
+          <div class="project-title">Conception d’une base de données relationnelle</div>
+          <div class="project-type">Projet académique – SQL</div>
+          <p class="project-desc">
+            Cahier des charges, dictionnaire de données, MCD et MPD, puis scripts SQL de création, remplissage,
+            requêtes complexes et automatisations pour exploiter la base de manière fiable.
+          </p>
+        </div>
+        <div class="project-tags">
+          <span class="project-tag">SQL</span>
+          <span class="project-tag">MCD / MPD</span>
+          <span class="project-tag">Modélisation</span>
+        </div>
+        <a href="https://drive.google.com/uc?export=view&id=1LNsIx7tI0V2V7v7bVOoOW2KHmDgbk_mW"
+           class="project-btn" target="_blank">
+          📄 Voir le rapport (PDF)
+        </a>
+      </div>
+    </article>
+
+    <!-- PROJET ACAD 6 : Analyses statistiques des sondages -->
+    <article class="project-card">
+      <div class="project-image" style="background-image: url('https://images.pexels.com/photos/669610/pexels-photo-669610.jpeg?auto=compress&cs=tinysrgb&w=800');">
+        <div class="project-overlay"></div>
+      </div>
+      <div class="project-body">
+        <div>
+          <div class="project-title">Analyses statistiques des sondages</div>
+          <div class="project-type">Projet académique – R</div>
+          <p class="project-desc">
+            Étude des estimateurs par calage, ratio et régression pour l’analyse de données d’enquêtes :
+            cadre théorique, estimation de variances et mise en pratique sous R.
+          </p>
+        </div>
+        <div class="project-tags">
+          <span class="project-tag">R</span>
+          <span class="project-tag">Statistiques d’enquête</span>
+          <span class="project-tag">Estimateurs</span>
+        </div>
+        <a href="https://drive.google.com/uc?export=view&id=1KvPDGgZqUyerALRZsgHgvktaDMpu1Tog"
+           class="project-btn" target="_blank">
+          📄 Voir le rapport (PDF)
+        </a>
+      </div>
+    </article>
+
+  </div>
+</section>
+   
+
+
+
+
+    <!-- EXPERIENCES -->
+    <section id="experience">
+      <h2 class="section-heading">
+        <span></span>
+        Expériences professionnelles
+      </h2>
+      <p class="section-subtitle">
+        Alternance, stage, projets en autonomie et soutien scolaire autour des données et des mathématiques.
+      </p>
+
+      <div class="experience-grid">
+        <article class="experience-card">
+          <div class="experience-card-header">
+            <div class="experience-main">
+              <div class="experience-role">Ingénieur Data Analyst</div>
+              <div class="experience-company">SNCF Groupe • Alternance</div>
+              <div class="experience-badges">
+                <span class="experience-badge">💼 Data analyst</span>
+                <span class="experience-badge">📊 Reporting</span>
+              </div>
+            </div>
+            <div class="experience-date">Sept. 2025 – Sept. 2026</div>
+          </div>
+          <p class="experience-desc">
+            Analyse, préparation et visualisation de données pour appuyer les décisions des équipes.
+            Automatisation de reportings et contribution à des projets data internes.
+          </p>
+        </article>
+
+        <article class="experience-card">
+          <div class="experience-card-header">
+            <div class="experience-main">
+              <div class="experience-role">Ingénieur Data Systèmes Informatiques</div>
+              <div class="experience-company">SNCF Réseau • Alternance</div>
+              <div class="experience-badges">
+                <span class="experience-badge">🗄️ SQL</span>
+                <span class="experience-badge">📈 Modèles de prévision</span>
+              </div>
+            </div>
+            <div class="experience-date">Août 2024 – Sept. 2025</div>
+          </div>
+          <p class="experience-desc">
+            Nettoyage et structuration des bases, analyses statistiques et modèles de prévision pour les besoins métiers.
+          </p>
+        </article>
+
+        <article class="experience-card">
+          <div class="experience-card-header">
+            <div class="experience-main">
+              <div class="experience-role">Stage en données spatiales et spatio-temporelles</div>
+              <div class="experience-company">Université de Poitiers</div>
+              <div class="experience-badges">
+                <span class="experience-badge">🗺️ Spatial</span>
+                <span class="experience-badge">R / Python</span>
+              </div>
+            </div>
+            <div class="experience-date">Juin – Juil. 2023</div>
+          </div>
+          <p class="experience-desc">
+            Étude de risques sanitaires à Mayotte, calcul d’indicateurs de risque et analyse de leviers sur données spatiales et temporelles.
+          </p>
+        </article>
+
+        <article class="experience-card">
+          <div class="experience-card-header">
+            <div class="experience-main">
+              <div class="experience-role">Développement web (HTML, SQL, PHP)</div>
+              <div class="experience-company">Projet universitaire</div>
+              <div class="experience-badges">
+                <span class="experience-badge">🌐 Web</span>
+                <span class="experience-badge">SQL / PHP</span>
+              </div>
+            </div>
+            <div class="experience-date">Fév. – Mai 2023</div>
+          </div>
+          <p class="experience-desc">
+            Création d’un mini-site dynamique connecté à une base SQL pour manipuler et afficher des données.
+          </p>
+        </article>
+
+        <article class="experience-card">
+          <div class="experience-card-header">
+            <div class="experience-main">
+              <div class="experience-role">Analyse de données spatiales</div>
+              <div class="experience-company">Projet en autonomie</div>
+              <div class="experience-badges">
+                <span class="experience-badge">🧪 Projet perso</span>
+                <span class="experience-badge">Données spatiales</span>
+              </div>
+            </div>
+            <div class="experience-date">Sept. 2022 – Fév. 2023</div>
+          </div>
+          <p class="experience-desc">
+            Exploration, visualisation et interprétation de données spatiales. Construction d’indicateurs et livrables d’analyse.
+          </p>
+        </article>
+
+        <article class="experience-card">
+          <div class="experience-card-header">
+            <div class="experience-main">
+              <div class="experience-role">Cours de soutien en mathématiques</div>
+              <div class="experience-company">Soutien scolaire</div>
+              <div class="experience-badges">
+                <span class="experience-badge">📚 Pédagogie</span>
+                <span class="experience-badge">Mathématiques</span>
+              </div>
+            </div>
+            <div class="experience-date">2015 – 2023</div>
+          </div>
+          <p class="experience-desc">
+            Accompagnement d’élèves : explications de cours, exercices, préparation aux évaluations et examens.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PARCOURS -->
+    <section id="journey">
+      <h2 class="section-heading">
+        <span></span>
+        Parcours
+      </h2>
+      <p class="section-subtitle">
+        Synthèse de ma formation : université, lycée et spécialisations.
+      </p>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-meta">2025 – 2026 • ESG MBA Paris &amp; SNCF Groupe</div>
+          <div class="timeline-title">MBA Big Data &amp; Intelligence Artificielle • Data Analyst</div>
+          <p class="timeline-desc">
+            MBA Big Data &amp; IA (parcours Chief Data Office) à ESG MBA Paris, en alternance comme Data Analyst à SNCF Groupe.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-meta">2024 – 2025 • Université de Poitiers</div>
+          <div class="timeline-title">Master 2 Statistique et Données du Vivant</div>
+          <p class="timeline-desc">
+            Master 2 orienté conception et validation de modèles statistiques en biologie-santé et traitement de données complexes.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-meta">2023 – 2024 • Université de Poitiers</div>
+          <div class="timeline-title">Master 1 Statistique et Données du Vivant</div>
+          <p class="timeline-desc">
+            Master 1 centré sur les statistiques, l’analyse de données et les projets appliqués.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-meta">2022 – 2023 • Université de Poitiers</div>
+          <div class="timeline-title">Licence Mathématiques – Statistiques et Applications</div>
+          <p class="timeline-desc">
+            Licence en mathématiques avec spécialisation en statistiques et applications.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-meta">2018 – 2021 • Université de Poitiers</div>
+          <div class="timeline-title">DEUG Mathématiques</div>
+          <p class="timeline-desc">
+            Base théorique en analyse, algèbre et probabilités.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-meta">2017 – 2018 • Lycée Adidogomé (Togo – Lomé)</div>
+          <div class="timeline-title">Baccalauréat Mathématiques et Sciences Physiques</div>
+          <p class="timeline-desc">
+            Baccalauréat scientifique, spécialité mathématiques et sciences physiques.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2 class="section-heading">
+        <span></span>
+        Contact
+      </h2>
+      <p class="section-subtitle">
+        Pour un échange, une opportunité ou une question sur mes projets.
+      </p>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <!-- Formulaire connecté à Formspree -->
+          <form
+            class="contact-form"
+            id="contactForm"
+            action="https://formspree.io/f/xvgygrlp"
+            method="POST"
+          >
+            <div class="field-group">
+              <label class="field-label" for="name">Nom</label>
+              <input
+                class="field-input"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Votre nom complet"
+                required
+              >
+            </div>
+
+            <div class="field-group">
+              <label class="field-label" for="email">Email</label>
+              <input
+                class="field-input"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="votre.email@example.com"
+                required
+              >
+            </div>
+
+            <div class="field-group">
+              <label class="field-label" for="message">Message</label>
+              <textarea
+                class="field-textarea"
+                id="message"
+                name="message"
+                placeholder="Expliquez votre demande, votre projet ou l’objet du contact."
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn-main" style="margin-top: 0.4rem;">
+              Envoyer le message
+            </button>
+
+            <p class="contact-note">
+              Le message sera envoyé via Formspree vers ma boîte mail.
+            </p>
+
+            <!-- Optionnel : message d’alerte si tu veux l’utiliser plus tard en JS -->
+            <div class="alert" id="formAlert"></div>
+          </form>
+        </div>
+
+        <div class="contact-info-card">
+          <h3 style="font-size: 0.95rem; margin-bottom: 0.6rem;">Infos pratiques</h3>
+          <ul class="contact-info-list">
+            <li><strong>Email :</strong> limadoeu21@.com</li>
+            <li><strong>Téléphone :</strong> +33 641344580</li>
+            <li><strong>Localisation :</strong> France</li>
+            <li><strong>Statut :</strong> Data Analyst en alternance – SNCF Groupe</li>
+            <li><strong>Formation :</strong> MBA 2 Big Data &amp; Intelligence Artificielle</li>
+          </ul>
+
+          <div class="social-links">
+  <a href="https://www.linkedin.com/in/kodzo-lima" class="social-link" target="_blank">
+    <span>in</span> LinkedIn
+  </a>
+
+  <a href="CV.pdf" class="social-link" target="_blank">
+    <span>📂</span> CV (PDF)
+  </a>
+
+  <a href="https://github.com/DdLIMA99" class="social-link" target="_blank">
+    <span>🐙</span> GitHub
+    <a href="CV.pdf" class="btn-cv" download target="_blank">
+  📂 Télécharger mon CV
+</a>
+
+  </a>
+</div>
+
+
+          <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.9rem;">
+            Remplace l’email, les liens et le CV par tes informations réelles.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      &copy; <span id="year"></span> Kodzo LIMA — ePortfolio.
+    </footer>
+  </main>
+
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">↑</button>
+
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+      });
+    });
+
+    const skillBars = document.querySelectorAll('.skill-bar-fill');
+    const aboutSection = document.getElementById('about');
+
+    const skillObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            skillBars.forEach(bar => {
+              const value = bar.getAttribute('data-skill');
+              bar.style.width = value + '%';
+            });
+            skillObserver.disconnect();
+          }
+        });
+      },
+      { threshold: 0.4 }
+    );
+
+    if (aboutSection && skillBars.length > 0) {
+      skillObserver.observe(aboutSection);
+    }
+
+    const backToTop = document.getElementById('backToTop');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 350) {
+        backToTop.classList.add('show');
+      } else {
+        backToTop.classList.remove('show');
+      }
+    });
+
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
