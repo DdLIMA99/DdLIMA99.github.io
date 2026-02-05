@@ -1069,3 +1069,8 @@ footer span {
   color: #374151;
 }
 .cert-list li { margin-bottom: 6px; line-height: 1.4; }
+.CERTIFICATION-grid {
+  display: grid;
+  gap: 24px;
+}
+
