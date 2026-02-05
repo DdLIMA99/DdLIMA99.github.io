@@ -1060,69 +1060,76 @@ footer span {
   background-position: center;
   background-repeat: no-repeat;
 }
-.certification-card { border-left: 5px solid #0f62fe; } /* bleu IBM */
+/* =========================
+   CERTIFICATIONS (CLEAN)
+   ========================= */
 
-.cert-list {
-  margin: 12px 0 16px;
-  padding-left: 18px;
-  font-size: 0.85rem;
-  color: var(--text-muted);
-}
-
-
-/* ===== CERTIFICATIONS SPACING FIX ===== */
-
+/* Grille certifications : espace entre les cartes */
 .CERTIFICATION-grid {
   display: grid;
   gap: 32px;
   margin-top: 1.2rem;
 }
 
-.certification-card {
-  border-left: 5px solid #3b82f6;
+/* Carte certification : même base que project-card + accent à gauche */
+.project-card.certification-card {
+  position: relative;
+  border-left: 5px solid #3b82f6; /* couleur par défaut */
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
 }
 
-/* corps de la carte */
-.certification-card .project-body {
+/* Option : couleurs par organisme (si tu ajoutes les classes dans le HTML)
+   <article class="project-card certification-card ibm"> ... */
+.project-card.certification-card.ibm { border-left-color: #0f62fe; }
+.project-card.certification-card.microsoft { border-left-color: #22c55e; }
+
+/* Corps : plus d’air */
+.project-card.certification-card .project-body {
   padding: 1.3rem 1.4rem 1.5rem;
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
 }
 
-/* description */
-.certification-card .project-desc {
-  margin-top: 0.3rem;
-  margin-bottom: 0.5rem;
+/* Titres / meta : petit rythme */
+.project-card.certification-card .project-title {
+  font-size: 1.05rem;
+  line-height: 1.3;
+}
+
+.project-card.certification-card .project-type {
+  margin-top: 0.1rem;
+}
+
+/* Description : meilleure lisibilité */
+.project-card.certification-card .project-desc {
+  margin-top: 0.2rem;
   line-height: 1.7;
 }
 
-/* liste certification */
-.cert-list {
+/* Liste : lisible sur fond sombre */
+.project-card.certification-card .cert-list {
   margin: 0.6rem 0 1rem;
   padding-left: 1.2rem;
   color: var(--text-muted);
 }
 
-.cert-list li {
+.project-card.certification-card .cert-list li {
   margin-bottom: 0.45rem;
   line-height: 1.6;
 }
 
-/* bouton certificat */
-.project-links {
-  margin-top: 0.5rem;
+/* Lien certificat : un peu d’espace */
+.project-card.certification-card .project-links {
+  margin-top: 0.3rem;
 }
 
-/* tags */
-.project-tags {
+.project-card.certification-card .project-link {
+  margin-top: 0;
+}
+
+/* Tags : espacés, et pas collés au bouton */
+.project-card.certification-card .project-tags {
   margin-top: 0.9rem;
   gap: 0.5rem;
 }
-
-/* séparation visuelle douce */
-.certification-card.project-card {
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
-}
-
-
