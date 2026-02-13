@@ -501,12 +501,15 @@ section {
   color: var(--text-muted);
 }
 
-/* PROJETS */
+/* =========================================================
+   PROJETS — VERSION CLEAN (pas de doublons)
+========================================================= */
 
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.4rem;
+  gap: 28px;
+  align-items: stretch;
 }
 
 .project-card {
@@ -518,6 +521,8 @@ section {
   flex-direction: column;
   transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
   position: relative;
+  width: 100%;
+  min-width: 0;
 }
 
 .project-card:hover {
@@ -528,10 +533,12 @@ section {
 
 .project-image {
   position: relative;
-  height: 170px;
+  height: 170px; /* change à 200 si tu veux plus grand */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
 }
 
 .project-overlay {
@@ -587,6 +594,29 @@ section {
   display: inline-flex;
   align-items: center;
   gap: 0.25rem;
+}
+
+.project-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  margin-top: 0.45rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  border: 1px solid rgba(148, 163, 184, 0.7);
+  background: radial-gradient(circle at top, #111827, #020617);
+  color: #e5e7eb;
+  text-decoration: none;
+  transition: transform 0.12s ease, box-shadow 0.12s ease, border-color 0.12s ease, background 0.12s ease;
+}
+
+.project-btn:hover {
+  transform: translateY(-1px);
+  border-color: #6366f1;
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.9);
+  background: radial-gradient(circle at top, #1f2937, #020617);
 }
 
 /* TIMELINE PARCOURS */
@@ -982,6 +1012,8 @@ footer span {
     grid-template-columns: minmax(0, 1fr);
   }
 }
+
+/* BOUTON CV */
 .btn-cv {
   display: inline-block;
   padding: 0.75rem 1.2rem;
@@ -1000,28 +1032,7 @@ footer span {
   transform: translateY(-2px);
   box-shadow: 0 6px 18px rgba(0,0,0,0.35);
 }
-.project-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.3rem;
-  margin-top: 0.45rem;
-  padding: 0.35rem 0.85rem;
-  border-radius: 999px;
-  font-size: 0.75rem;
-  border: 1px solid rgba(148, 163, 184, 0.7);
-  background: radial-gradient(circle at top, #111827, #020617);
-  color: #e5e7eb;
-  text-decoration: none;
-  transition: transform 0.12s ease, box-shadow 0.12s ease, border-color 0.12s ease, background 0.12s ease;
-}
 
-.project-btn:hover {
-  transform: translateY(-1px);
-  border-color: #6366f1;
-  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.9);
-  background: radial-gradient(circle at top, #1f2937, #020617);
-}
 /* ==== REFERENCES ==== */
 
 #references {
@@ -1055,35 +1066,26 @@ footer span {
   color: var(--text-muted);
   margin-bottom: 0.8rem;
 }
-.project-image {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
+
 /* =========================
    CERTIFICATIONS (CLEAN)
-   ========================= */
+========================= */
 
-/* Grille certifications : espace entre les cartes */
 .CERTIFICATION-grid {
   display: grid;
   gap: 32px;
   margin-top: 1.2rem;
 }
 
-/* Carte certification : même base que project-card + accent à gauche */
 .project-card.certification-card {
   position: relative;
-  border-left: 5px solid #3b82f6; /* couleur par défaut */
+  border-left: 5px solid #3b82f6;
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
 }
 
-/* Option : couleurs par organisme (si tu ajoutes les classes dans le HTML)
-   <article class="project-card certification-card ibm"> ... */
 .project-card.certification-card.ibm { border-left-color: #0f62fe; }
 .project-card.certification-card.microsoft { border-left-color: #22c55e; }
 
-/* Corps : plus d’air */
 .project-card.certification-card .project-body {
   padding: 1.3rem 1.4rem 1.5rem;
   display: flex;
@@ -1091,7 +1093,6 @@ footer span {
   gap: 0.7rem;
 }
 
-/* Titres / meta : petit rythme */
 .project-card.certification-card .project-title {
   font-size: 1.05rem;
   line-height: 1.3;
@@ -1101,13 +1102,11 @@ footer span {
   margin-top: 0.1rem;
 }
 
-/* Description : meilleure lisibilité */
 .project-card.certification-card .project-desc {
   margin-top: 0.2rem;
   line-height: 1.7;
 }
 
-/* Liste : lisible sur fond sombre */
 .project-card.certification-card .cert-list {
   margin: 0.6rem 0 1rem;
   padding-left: 1.2rem;
@@ -1119,7 +1118,6 @@ footer span {
   line-height: 1.6;
 }
 
-/* Lien certificat : un peu d’espace */
 .project-card.certification-card .project-links {
   margin-top: 0.3rem;
 }
@@ -1128,30 +1126,7 @@ footer span {
   margin-top: 0;
 }
 
-/* Tags : espacés, et pas collés au bouton */
 .project-card.certification-card .project-tags {
   margin-top: 0.9rem;
   gap: 0.5rem;
 }
-.projects-grid{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
-  align-items: stretch;
-}
-
-/* optionnel : évite que l'image “prenne toute la place” */
-.project-image{
-  height: 220px;
-  background-size: cover;
-  background-position: center;
-  border-top-left-radius: 18px;
-  border-top-right-radius: 18px;
-}
-
-/* optionnel : cartes bien régulières */
-.project-card{
-  width: 100%;
-  min-width: 0; /* important pour éviter les débordements */
-}
-
